@@ -2,7 +2,7 @@
 
 ## Project
 
-SpringBoot microservice for implementing a Claude Hexagonal solution.
+SpringBoot microservice starter for implementing a Claude Hexagonal solution.
 
 ## Build & Run
 
