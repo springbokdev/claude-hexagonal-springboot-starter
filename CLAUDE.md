@@ -1,4 +1,4 @@
-# CLAUDE.md
+``# CLAUDE.md
 
 ## Project
 
@@ -22,15 +22,6 @@ and never generates schema. Connection is in `src/main/resources/application.yam
 overridable via `DB_URL` / `DB_USERNAME` / `DB_PASSWORD`. (Local-run setup is in the README.)
 
 ## Coding Conventions
-
-### Money
-BigDecimal for ALL monetary values. NEVER float, double, or int.
-Always explicit RoundingMode. RoundingMode.HALF_EVEN, scale 2.
-BigDecimal.valueOf() or new BigDecimal("...") — NEVER new BigDecimal(double).
-
-### Java 25
-Records for value objects, sealed interfaces, pattern matching.
-No Lombok — records replace it.
 
 ### REST & Spring
 Constructor injection only (no field @Autowired).
@@ -73,6 +64,7 @@ Controllers NEVER contain business logic.
 Dependencies flow inward: adapter → application → domain.
 
 ## Use Project Lombok
+
 * Use Lombok to reduce boilerplate code.
 * Enable annotation processing for your IDE to generate boilerplate code for you.
 * When adding builder to a class, if the class extends another class, add `@SuperBuilder`for the builder.
