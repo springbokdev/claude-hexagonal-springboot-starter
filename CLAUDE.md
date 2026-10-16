@@ -63,6 +63,17 @@ Domain NEVER imports org.springframework or jakarta.persistence.
 Controllers NEVER contain business logic.
 Dependencies flow inward: adapter → application → domain.
 
+## Design Principles
+SOLID applies to all production code:
+- SRP: one reason to change per class. Split domain services by business rule.
+- OCP: add behaviour through new types (Strategy, polymorphism), not by growing switch/if chains.
+- LSP: subtypes keep their parent's contracts. No UnsupportedOperationException overrides.
+- ISP: keep ports in application/port/in and port/out narrow (one use case per in-port).
+- DIP: the domain depends only on its own abstractions. Adapters implement ports.
+
+GoF patterns: use one only when the problem actually calls for it, and name it in the class. 
+Never add a pattern just in case.
+
 ## Use Project Lombok
 
 * Use Lombok to reduce boilerplate code.
