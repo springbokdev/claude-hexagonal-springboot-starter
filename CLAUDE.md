@@ -13,7 +13,7 @@ Maven wrapper (`./mvnw`, not `mvn`); Java 25 required (see `pom.xml`).
 - `./mvnw -Dtest=ClassName#method test` — single test class/method.
 - `./mvnw spring-boot:run` — needs a running PostgreSQL (see Database below).
 
-## Stack: 
+## Stack 
 - spring-boot-starter-web
 - spring-boot-starter-data-jpa
 - spring-boot-starter-validation
