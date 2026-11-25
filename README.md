@@ -1,7 +1,7 @@
 # Spring Boot SDD Starter
 
 A starter for building Spring Boot services using a **Spec-Driven Development (SDD)** workflow with Claude Code. It 
-bundles a working Spring Boot 4 / Gradle project together with a `.claude/` toolchain — skills, agents, and 
+bundles a working Spring Boot 4 / Maven project together with a `.claude/` toolchain — skills, agents, and 
 hooks — that turns business rules into specs, specs into acceptance tests, and tests into code, with the test suite enforced automatically on every change.
 
 ## Prerequisites
